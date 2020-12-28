@@ -27,7 +27,7 @@ Types of samples:
   
 - variance and standard deviation are measures of variability that involve deviations from the mean.
   - the sum of deviations from the mean equals zero.
-- **sample variance**: <img width="60" src="./photos/devore3.png">
+- **sample variance**: <img width="100" src="./photos/devore3.png">
   - note that we divide by n - 1 rather than n because we tend to underestimate (proof not included).
 - **standard deviation**: <img width="60" src="./photos/devore4.png">
   - think of this as the typical deviation from the sample mean that you can expect from each data point.
