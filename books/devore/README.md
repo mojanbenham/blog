@@ -1,6 +1,6 @@
 # Probability and Statistics for Engineering and the Sciences
-## Author: Jay Devore 
-## Eighth Edition
+### Author: Jay Devore 
+### Eighth Edition
 
 ## Chapter One - Overview and Descriptive Statistics
 
