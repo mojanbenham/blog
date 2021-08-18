@@ -50,5 +50,4 @@ write_file = PythonOperator(
 )
 
 # structure dag
-get_team >> get_players >> write_file
-get_team >> get_games >> write_file
+get_team >> [get_players, get_games] >> write_file
