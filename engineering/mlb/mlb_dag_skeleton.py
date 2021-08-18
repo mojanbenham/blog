@@ -1,16 +1,17 @@
 # import necessary libraries
-import airflow
+import airflow 
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 # define DAG
-mlb_dag = DAG(
-    dag_id = "baseball_info",
+mlb_dag=DAG(
+    dag_id="baseball_info",
+    start_date=airflow.utils.dates.days_ago(1),
     schedule_interval=None,
 )
 
-# define operators
+# define tasks
 def _get_team():
     print("_get_team task is running.")
 
@@ -23,7 +24,7 @@ def _get_games():
 def _write_file():
     print("_write_file task is running.")
 
-# write tasks
+# write operators
 get_team = PythonOperator(
     task_id = "get_team",
     python_callable=_get_team,
